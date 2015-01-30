@@ -90,6 +90,7 @@
     lm_sensors
     pmutils
     stow			# manage dotfiles
+    utillinuxCurses
     wget
     xlibs.xmessage		# xmonad help
   ];
