@@ -80,11 +80,15 @@
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
+    acpi
+    aspell
     dmenu			# xmonad
     emacs
+    firefox
     git
     gmrun			# xmonad
     lm_sensors
+    pmutils
     stow			# manage dotfiles
     wget
     xlibs.xmessage		# xmonad help
