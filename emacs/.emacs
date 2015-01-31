@@ -19,8 +19,11 @@
 (setq-default tab-width 4)
 
 ;;; Highlight matching parens.
-(show-paren-mode 1)
-(setq show-paren-delay 0)
+;; XXX: Makes proofgeneral return the following error when I'm typing
+;; the dot to end an expression, like [Check 2.]:
+;; Error running timer `show-paren-function': (wrong-type-argument characterp nil)
+;; (show-paren-mode 1)
+;; (setq show-paren-delay 0)
 
 ;;; Windows-like copy/paste using X clipboard.
 (setq x-select-enable-clipboard t)
@@ -62,3 +65,5 @@
 (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 
+;;; Proof General, for Coq.
+(load-file (concat nix-site-lisp "ProofGeneral/generic/proof-site.el"))

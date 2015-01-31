@@ -87,6 +87,7 @@
   environment.systemPackages = with pkgs; [
     acpi
     aspell
+    coq
     dejavu_fonts
     dmenu			# xmonad
     emacs
