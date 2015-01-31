@@ -1,9 +1,15 @@
+(add-to-list 'load-path "/var/run/current-system/sw/share/emacs/site-lisp/")
+
 ;;; ELPA.
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
                          ("marmalade" . "https://marmalade-repo.org/packages/")))
 
 ;;; Font.
 (set-face-attribute 'default nil :font "DejaVu Sans Mono-14")
+
+;;; Color theme.
+(add-to-list 'custom-theme-load-path "/var/run/current-system/sw/share/emacs/site-lisp/")
+(load-theme 'solarized-dark t)
 
 ;;; No tabs.
 (setq-default ident-tabs-mode nil)
