@@ -90,6 +90,17 @@
     dejavu_fonts
     dmenu			# xmonad
     emacs
+    emacs24Packages.bbdb3
+    emacs24Packages.colorThemeSolarized
+    emacs24Packages.colorTheme
+    emacs24Packages.emacsw3m
+    emacs24Packages.haskellModeGit
+    emacs24Packages.magit
+    emacs24Packages.ocamlMode
+    emacs24Packages.org
+    emacs24Packages.proofgeneral_4_3_pre
+    emacs24Packages.scalaMode2
+    emacs24Packages.structuredHaskellMode
     firefox
     git
     gmrun			# xmonad
