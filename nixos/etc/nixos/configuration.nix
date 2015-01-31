@@ -66,7 +66,12 @@
 
     desktopManager.default = "none";
     desktopManager.xterm.enable = false;
-};
+  };
+
+  fonts = {
+    enableFontDir = true;
+    enableGhostscriptFonts = true;
+  };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.extraUsers.guest = {
@@ -82,6 +87,7 @@
   environment.systemPackages = with pkgs; [
     acpi
     aspell
+    dejavu_fonts
     dmenu			# xmonad
     emacs
     firefox
@@ -92,6 +98,7 @@
     stow			# manage dotfiles
     utillinuxCurses
     wget
+    xfontsel
     xlibs.xmessage		# xmonad help
   ];
 
