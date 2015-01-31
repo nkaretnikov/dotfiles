@@ -1,4 +1,7 @@
-(add-to-list 'load-path "/var/run/current-system/sw/share/emacs/site-lisp/")
+(defconst nix-site-lisp
+  "/var/run/current-system/sw/share/emacs/site-lisp/")
+
+(add-to-list 'load-path nix-site-lisp)
 
 ;;; ELPA.
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
@@ -52,3 +55,10 @@
 ;;; TLS.
 (require 'tls)
 (setq tls-program '("gnutls-cli --strict-tofu --priority=PFS -p %p %h"))
+
+;;; Haskell mode.
+(require 'haskell-mode-autoloads)
+(add-to-list 'Info-default-directory-list nix-site-lisp)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+
