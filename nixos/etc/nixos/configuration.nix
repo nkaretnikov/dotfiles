@@ -110,6 +110,7 @@
     stow			# manage dotfiles
     utillinuxCurses
     wget
+    wgetpaste
     xfontsel
     xlibs.xmessage		# xmonad help
   ];
