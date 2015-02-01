@@ -43,6 +43,11 @@
 ;;; align-regexp, mainly for Haskell.
 (global-set-key (kbd "C-x a r") 'align-regexp)
 
+(defun kill-other-buffers ()
+  "Kill all other buffers."
+  (interactive)
+  (mapc 'kill-buffer (delq (current-buffer) (buffer-list))))
+
 ;;; Show trailing whitespace, long lines, etc.
 (require 'whitespace)
 (setq whitespace-style '(face empty tabs lines-tail trailing))
