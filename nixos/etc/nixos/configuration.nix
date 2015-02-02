@@ -49,6 +49,16 @@
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 
+  # Tor and privoxy.
+  # Tor ports: 9050, 9063; privoxy: 8118
+  # Example: https_proxy=localhost:8118 http_proxy=$https_proxy wget -O - https://check.torproject.org
+  services.tor = {
+    enable = true;
+    client.enable = true;
+    client.privoxy.enable = true;
+  };
+  services.privoxy.enable = true;
+
   # Enable CUPS to print documents.
   # services.printing.enable = true;
 
