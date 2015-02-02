@@ -64,6 +64,10 @@
 (require 'tls)
 (setq tls-program '("gnutls-cli --strict-tofu --priority=PFS -p %p %h"))
 
+;;; Ispell.
+(setq-default ispell-program-name "aspell")
+(setq ispell-dictionary "american")
+
 ;;; Haskell mode.
 (require 'haskell-mode-autoloads)
 (add-to-list 'Info-default-directory-list nix-site-lisp)
