@@ -68,6 +68,11 @@
 (setq-default ispell-program-name "aspell")
 (setq ispell-dictionary "american")
 
+;;; Flyspell.
+;; XXX: Make it work in the Lisp mode and for strings in the shell.
+(add-hook 'text-mode-hook 'flyspell-mode)
+(add-hook 'prog-mode-hook 'flyspell-prog-mode)
+
 ;;; Haskell mode.
 (require 'haskell-mode-autoloads)
 (add-to-list 'Info-default-directory-list nix-site-lisp)
