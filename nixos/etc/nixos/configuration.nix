@@ -113,6 +113,7 @@
     emacs24Packages.proofgeneral_4_3_pre
     emacs24Packages.scalaMode2
     emacs24Packages.structuredHaskellMode
+    file
     firefox
     git
     gmrun			# xmonad
