@@ -1,0 +1,5 @@
+[user]
+	email = nikita@karetnikov.org
+	name = Nikita Karetnikov
+[push]
+	default = simple
