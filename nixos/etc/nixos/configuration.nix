@@ -117,6 +117,7 @@
     firefox
     git
     gmrun			# xmonad
+    gnupg
     lm_sensors
     pmutils
     stow			# manage dotfiles
