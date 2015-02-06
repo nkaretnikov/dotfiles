@@ -62,6 +62,8 @@
   # Enable CUPS to print documents.
   # services.printing.enable = true;
 
+  services.thinkfan.enable = true;
+
   services.xserver = {
     # Enable the X11 windowing system.
     enable = true;
