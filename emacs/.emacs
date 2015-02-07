@@ -81,3 +81,6 @@
 
 ;;; Proof General, for Coq.
 (load-file (concat nix-site-lisp "ProofGeneral/generic/proof-site.el"))
+
+;;; Enable 'erase-buffer'.
+(put 'erase-buffer 'disabled nil)
