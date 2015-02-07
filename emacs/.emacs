@@ -69,19 +69,21 @@
 (setq erc-autojoin-channels-alist
       '(("freenode.net" "#nixos" "#haskell" "#ghc" "#yesod"
          "#coq" "#snowdrift" "#replicant" "#libreboot")))
-(setq erc-log-channels-directory "~/.erc/logs/")
-(setq erc-save-buffer-on-part t)
-;; Auto-saving log files on Emacs exit.
-;; http://www.emacswiki.org/emacs/ErcLogging
-(defadvice save-buffers-kill-emacs
- (before save-logs (arg) activate)
- (save-some-buffers t (lambda () (when (eq major-mode 'erc-mode) t))))
+;; XXX: Doesn't work.
+;; (setq erc-log-channels-directory "~/.erc/logs/")
+;; (setq erc-save-buffer-on-part t)
+;; ;; Auto-saving log files on Emacs exit.
+;; ;; http://www.emacswiki.org/emacs/ErcLogging
+;; (defadvice save-buffers-kill-emacs
+;;  (before save-logs (arg) activate)
+;;  (save-some-buffers t (lambda () (when (eq major-mode 'erc-mode) t))))
 
-;; Truncate buffers down to 30000 characters.
-;; http://www.emacswiki.org/emacs/ErcTruncation
-(setq erc-max-buffer-size 30000)
-(add-hook 'erc-insert-post-hookd 'erc-truncate-buffer)
-(setq erc-truncate-buffer-on-save t)
+;; XXX: Disabled until logging works.
+;; ;; Truncate buffers down to 30000 characters.
+;; ;; http://www.emacswiki.org/emacs/ErcTruncation
+;; (setq erc-max-buffer-size 30000)
+;; (add-hook 'erc-insert-post-hookd 'erc-truncate-buffer)
+;; (setq erc-truncate-buffer-on-save t)
 
 ;;; TLS.
 (require 'tls)
