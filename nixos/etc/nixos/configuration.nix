@@ -31,11 +31,9 @@
 
   networking = {
     hostName = "mu";
-    wicd.enable = true;
-    # These are not needed with wicd.
-    interfaceMonitor.enable = false;
-    wireless.enable = false;
-    useDHCP = false;
+    nameservers = [ "192.168.0.1" ];
+    # Requires 'ssid' and 'psk' in '/etc/wpa_supplicant.conf'.
+    wireless.enable = true;
   };
 
   # Select internationalisation properties.
