@@ -29,8 +29,14 @@
   }
   ];
 
-  networking.hostName = "mu"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless.
+  networking = {
+    hostName = "mu";
+    wicd.enable = true;
+    # These are not needed with wicd.
+    interfaceMonitor.enable = false;
+    wireless.enable = false;
+    useDHCP = false;
+  };
 
   # Select internationalisation properties.
   i18n = {
