@@ -129,6 +129,8 @@
     gmrun			# xmonad
     gnupg
     gnutls
+    haskellPackages.cabalInstall
+    haskellPackages.ghc
     lm_sensors
     pmutils
     stow			# manage dotfiles
