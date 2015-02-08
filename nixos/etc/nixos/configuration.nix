@@ -128,6 +128,7 @@
     git
     gmrun			# xmonad
     gnupg
+    gnutls
     lm_sensors
     pmutils
     stow			# manage dotfiles

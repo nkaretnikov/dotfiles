@@ -87,6 +87,11 @@
 
 ;;; TLS.
 (require 'tls)
+;; Disable 'net/gnutls.el', so GNUtls can be run with the options I
+;; need.
+;; https://blogs.fsfe.org/jens.lechtenboerger/2014/03/23/certificate-pinning-for-gnu-emacs/
+(if (fboundp 'gnutls-available-p)
+    (fmakunbound 'gnutls-available-p))
 (setq tls-program '("gnutls-cli --strict-tofu --priority=PFS -p %p %h"))
 
 ;;; Ispell.
