@@ -129,6 +129,7 @@
     gmrun			# xmonad
     gnupg
     gnutls
+    haskellPackages.cabal2nix
     haskellPackages.cabalInstall
     haskellPackages.ghc
     lm_sensors
