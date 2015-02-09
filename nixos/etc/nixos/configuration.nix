@@ -68,16 +68,12 @@
 
   services.thinkfan.enable = true;
 
-  programs.ssh.startAgent = false; # gpg-agent takes over this role
-
   services.xserver = {
     # Enable the X11 windowing system.
     enable = true;
     layout = "us,ru";
     xkbOptions = "grp:ctrl_shift_toggle,ctrl:nocaps";
     wacom.enable = true;	# digitalizer
-
-    startGnuPGAgent = true;
 
     # Enable the xmonad window manager.
     windowManager.xmonad.enable = true;
