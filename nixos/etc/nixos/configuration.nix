@@ -63,6 +63,9 @@
   };
   services.privoxy.enable = true;
 
+  services.postgresql.enable = true;
+  services.postgresql.package = pkgs.postgresql;
+
   # Enable CUPS to print documents.
   # services.printing.enable = true;
 
