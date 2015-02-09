@@ -125,6 +125,7 @@
     emacs24Packages.structuredHaskellMode
     file
     firefox
+    gcc
     gimp
     git
     gmrun			# xmonad
@@ -134,6 +135,7 @@
     haskellPackages.cabalInstall
     haskellPackages.ghc
     lm_sensors
+    pkgconfig
     pmutils
     stow			# manage dotfiles
     utillinuxCurses
