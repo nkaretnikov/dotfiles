@@ -125,6 +125,7 @@
     emacs24Packages.structuredHaskellMode
     file
     firefox
+    gimp
     git
     gmrun			# xmonad
     gnupg
@@ -140,6 +141,7 @@
     wgetpaste
     xfontsel
     xlibs.xmessage		# xmonad help
+    xsane
   ];
 
 }
