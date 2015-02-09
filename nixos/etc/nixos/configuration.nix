@@ -133,6 +133,7 @@
     haskellPackages.cabal2nix
     haskellPackages.cabalInstall
     haskellPackages.ghc
+    haskellPackages.hasktags
     lm_sensors
     pkgconfig
     pmutils
