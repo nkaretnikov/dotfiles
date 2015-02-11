@@ -144,6 +144,7 @@
     xfontsel
     xlibs.xmessage		# xmonad help
     xsane
+    youtube-dl
   ];
 
 }
