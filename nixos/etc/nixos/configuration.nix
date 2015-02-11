@@ -135,6 +135,7 @@
     haskellPackages.ghc
     haskellPackages.hasktags
     lm_sensors
+    mplayer
     pkgconfig
     pmutils
     stow			# manage dotfiles
