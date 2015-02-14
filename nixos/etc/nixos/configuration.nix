@@ -142,6 +142,7 @@
     utillinuxCurses
     wget
     wgetpaste
+    wireshark
     xfontsel
     xlibs.xmessage		# xmonad help
     xsane
