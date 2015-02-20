@@ -135,6 +135,8 @@
     haskellPackages.ghc
     haskellPackages.hasktags
     lm_sensors
+    mpc_cli
+    mpd
     mplayer
     pkgconfig
     pmutils
