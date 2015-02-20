@@ -126,6 +126,7 @@
     file
     firefox
     gcc
+    ghostscript
     gimp
     git
     gmrun			# xmonad
