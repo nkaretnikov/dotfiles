@@ -53,6 +53,16 @@
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 
+  services.opensmtpd.enable = true;
+  services.opensmtpd.serverConfiguration =
+    ''
+    listen on lo
+    # If you want any other user to receive mail, list them here too.
+    table catchall { "@localhost" = nikita }
+    # Deliver to ~/Maildir.
+    accept for any virtual <catchall> deliver to maildir
+    '';
+
   # Tor and privoxy.
   # Tor ports: 9050, 9063; privoxy: 8118
   # Example: https_proxy=localhost:8118 http_proxy=$https_proxy wget -O - https://check.torproject.org
