@@ -154,6 +154,7 @@
     pmutils
     stow			# manage dotfiles
     utillinuxCurses
+    vlc
     wget
     wgetpaste
     wireshark
