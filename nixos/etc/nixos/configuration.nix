@@ -111,12 +111,20 @@
     extraGroups = [ "wheel" ];
   };
 
+  nixpkgs.config = {
+    firefox = {
+      enableGnash = true;
+    };
+  };
+
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
     acpi
     aspell
     aspellDicts.en
+    autoconf
+    automake
     coq
     dejavu_fonts
     dmenu			# xmonad
@@ -134,22 +142,27 @@
     emacs24Packages.structuredHaskellMode
     evince
     file
-    firefox
+    firefoxWrapper
     gcc
     ghostscript
     gimp
     git
     gmrun			# xmonad
+    gnumake
     gnupg
     gnutls
+    haskellPackages.alex
     haskellPackages.cabal2nix
     haskellPackages.cabalInstall
     haskellPackages.ghc
+    haskellPackages.happy
     haskellPackages.hasktags
+    libreoffice
     lm_sensors
     mpc_cli
     mpd
     mplayer
+    ncurses
     pkgconfig
     pmutils
     stow			# manage dotfiles
