@@ -135,7 +135,10 @@
  ;; If there is more than one, they won't work right.
  '(coq-cheat-face ((t (:background "darkred"))))
  '(coq-solve-tactics-face ((t (:foreground "brown2"))))
- '(proof-error-face ((t (:background "brown4"))))
- '(proof-locked-face ((t (:background "midnight blue"))))
+ '(proof-eager-annotation-face ((t nil)))
+ '(proof-error-face ((t nil)))
+ '(proof-locked-face ((t (:background "#2f3f4f"))))
  '(proof-queue-face ((t (:background "purple4"))))
+ '(proof-tactics-name-face ((t (:foreground "#6c71c4"))))
  '(proof-warning-face ((t (:background "brown4")))))
+(put 'upcase-region 'disabled nil)
