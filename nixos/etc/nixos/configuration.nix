@@ -121,13 +121,15 @@
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
     acpi
+    ant
     aspell
     aspellDicts.en
     autoconf
     automake
     coq
+    darcs
     dejavu_fonts
-    dmenu			# xmonad
+    dmenu           # xmonad
     emacs
     emacs24Packages.bbdb3
     emacs24Packages.colorThemeSolarized
@@ -147,7 +149,7 @@
     ghostscript
     gimp
     git
-    gmrun			# xmonad
+    gmrun           # xmonad
     gnumake
     gnupg
     gnutls
@@ -159,22 +161,31 @@
     haskellPackages.hasktags
     libreoffice
     lm_sensors
+    maven
     mpc_cli
     mpd
     mplayer
     ncurses
+    nix-repl
+    openjdk
     pkgconfig
     pmutils
-    stow			# manage dotfiles
+    python
+    pythonPackages.pip
+    sbt
+    scala
+    stow            # manage dotfiles
+    unzip
     utillinuxCurses
     vlc
     wget
     wgetpaste
     wireshark
     xfontsel
-    xlibs.xmessage		# xmonad help
+    xlibs.xmessage  # xmonad help
     xsane
     youtube-dl
+    zip
   ];
 
 }
