@@ -94,6 +94,14 @@
     (fmakunbound 'gnutls-available-p))
 (setq tls-program '("gnutls-cli --strict-tofu --priority=PFS -p %p %h"))
 
+;;; Auto complete.
+(require 'auto-complete-config)
+(ac-config-default)
+(global-auto-complete-mode t)
+(ac-flyspell-workaround)				; work nicely with flyspell
+(setq ac-auto-start 2)
+(setq ac-ignore-case nil)
+
 ;;; Ispell.
 (setq-default ispell-program-name "aspell")
 (setq ispell-dictionary "american")

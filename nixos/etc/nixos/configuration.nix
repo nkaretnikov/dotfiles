@@ -131,6 +131,7 @@
     dejavu_fonts
     dmenu           # xmonad
     emacs
+    emacs24Packages.autoComplete
     emacs24Packages.bbdb3
     emacs24Packages.colorThemeSolarized
     emacs24Packages.colorTheme
