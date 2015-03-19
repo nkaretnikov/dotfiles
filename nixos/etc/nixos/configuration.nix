@@ -71,6 +71,9 @@
     client.enable = true;
     client.privoxy.enable = true;
   };
+
+  services.printing.enable = true;
+
   services.privoxy.enable = true;
 
   services.postgresql.enable = true;
@@ -168,6 +171,7 @@
     mplayer
     ncurses
     nix-repl
+    nodejs
     openjdk
     pkgconfig
     pmutils
